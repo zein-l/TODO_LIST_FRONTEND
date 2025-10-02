@@ -1,16 +1,110 @@
-# React + Vite
+# To-Do List (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple, responsive To-Do app with filters, dark mode, persistence, due dates, undo, animations, and tests.
 
-Currently, two official plugins are available:
+**Live demo:** (add link after deploying)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core**
+  - Add a task (title required, optional description)
+  - Mark complete / Delete
+  - Filter: **All / Active / Completed**
+- **UI/UX**
+  - Clean, responsive layout (mobile + desktop)
+  - Visual distinction between completed vs active
+  - **Dark mode** (manual toggle + persisted preference)
+  - **Delightful animations** (add/toggle/delete)
+  - **Accessible**: labeled controls, focus rings, `aria-live` updates
+  - **Smart copy**:
+    - Dynamic tagline (changes in dark mode)
+    - Fun placeholders
+    - “Far-future” due date gag banner
+- **Bonus**
+  - **localStorage** persistence (with safe parsing)
+  - **Due date** support + **sorting** (Overdue → Soonest → No date)
+  - **Badges**: Overdue / Due today
+  - **Undo delete** (toast with Undo, works before/after removal)
+  - **Unit tests** (Jest + React Testing Library)
+  - **Dark mode** persisted & respects system preference
+  - **Keyboard shortcuts**:
+    - `Enter` on title submits task
+    - `Ctrl/Cmd + D` toggles dark mode
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Testing
+
+- Unit tests: Jest + React Testing Library  
+  - `src/__tests__/App.test.jsx` – header  
+  - `src/__tests__/TaskInput.test.jsx` – add task  
+  - `src/__tests__/TaskActions.test.jsx` – toggle, delete, filter  
+  - `src/__tests__/DarkMode.test.jsx` – dark class & label  
+  - `src/__tests__/Persistence.test.jsx` – localStorage read/write  
+
+Run:
+```bash
+npm run test
+npm run test -- --watchAll
+npm run test:coverage
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- React 19 + Vite 7  
+- Vanilla CSS with CSS variables (light/dark)  
+- Jest + React Testing Library  
+- (Optional) Playwright E2E (instructions in this README if you enable it)  
+
+---
+
+## 📁 Structure
+
+```
+src/
+  components/
+    TaskInput.jsx
+    TaskItem.jsx
+  __tests__/
+    App.test.jsx
+    TaskInput.test.jsx
+    TaskActions.test.jsx
+    DarkMode.test.jsx
+    Persistence.test.jsx
+  App.jsx
+  App.css
+  main.jsx
+  index.css
+```
+
+---
+
+## ▶️ Local Setup
+
+```bash
+# install
+npm install
+
+# run dev server
+npm run dev
+
+# build
+npm run build
+
+# preview production build
+npm run preview
+```
+
+---
+
+## 🔒 Decisions & Notes
+
+- State is minimal; tasks serialized to localStorage with shape checks.  
+- Sorting is predictable: Overdue → earliest due → undated.  
+- Undo is robust: we keep a backup, schedule deletion after exit animation, and cancel/reinsert on Undo.  
+- Styling uses variables for theme tokens (light/dark) and responsive layout.  
+- Accessibility: tied labels, visible focus rings, polite aria-live announcements for counts.  
