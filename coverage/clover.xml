@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1759359421506" clover="3.2.0">
+  <project timestamp="1759359421506" name="All files">
+    <metrics statements="52" coveredstatements="37" conditionals="52" coveredconditionals="23" methods="30" coveredmethods="15" elements="134" coveredelements="75" complexity="0" loc="52" ncloc="52" packages="2" files="3" classes="3"/>
+    <package name="src">
+      <metrics statements="36" coveredstatements="23" conditionals="34" coveredconditionals="14" methods="23" coveredmethods="10"/>
+      <file name="App.jsx" path="C:\Users\Zeink\OneDrive\Desktop\frontendassmnt\todo-app\src\App.jsx">
+        <metrics statements="36" coveredstatements="23" conditionals="34" coveredconditionals="14" methods="23" coveredmethods="10"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="61" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="86" count="3" type="cond" truecount="2" falsecount="2"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="93" count="3" type="stmt"/>
+        <line num="97" count="3" type="stmt"/>
+        <line num="100" count="9" type="stmt"/>
+        <line num="101" count="9" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="112" count="3" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="158" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="16" coveredstatements="14" conditionals="18" coveredconditionals="9" methods="7" coveredmethods="5"/>
+      <file name="TaskInput.jsx" path="C:\Users\Zeink\OneDrive\Desktop\frontendassmnt\todo-app\src\components\TaskInput.jsx">
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="9" count="19" type="stmt"/>
+        <line num="10" count="19" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="19" type="stmt"/>
+        <line num="47" count="8" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
+      </file>
+      <file name="TaskItem.jsx" path="C:\Users\Zeink\OneDrive\Desktop\frontendassmnt\todo-app\src\components\TaskItem.jsx">
+        <metrics statements="4" coveredstatements="2" conditionals="14" coveredconditionals="7" methods="3" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
