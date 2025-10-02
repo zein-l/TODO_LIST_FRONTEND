@@ -2,7 +2,7 @@
 
 Simple, responsive To-Do app with filters, dark mode, persistence, due dates, undo, animations, and tests.
 
-**Live demo:** (add link after deploying)
+**Live demo:** https://zein-l.github.io/TODO_LIST_FRONTEND/
 
 ---
 
@@ -58,7 +58,7 @@ npm run test:coverage
 - React 19 + Vite 7  
 - Vanilla CSS with CSS variables (light/dark)  
 - Jest + React Testing Library  
-- (Optional) Playwright E2E (instructions in this README if you enable it)  
+
 
 ---
 
